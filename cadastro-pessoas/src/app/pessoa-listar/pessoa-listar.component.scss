@@ -1,0 +1,34 @@
+.table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  .table th, .table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  .table th {
+    background-color: #f2f2f2;
+    font-weight: bold;
+    text-align: left;
+  }
+  
+  .table tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+  
+  .table tr:hover {
+    background-color: #e2e2e2;
+  }
+
+  .update-link {
+    color: #007bff; /* Cor azul para o link */
+    text-decoration: none; /* Remover sublinhado padrão */
+    cursor: pointer; /* Altera o cursor ao passar sobre o link */
+    transition: color 0.3s; /* Adiciona uma transição suave para a cor */
+  }
+  
+  .update-link:hover {
+    color: #0056b3; /* Altera a cor ao passar o mouse sobre o link */
+  }

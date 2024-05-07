@@ -1,0 +1,18 @@
+/* You can add global styles to this file, and also import other style files */
+.button-line,
+.button-line a {
+    margin: 8px 8px 0px 0px
+}
+
+.default-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.component-container{
+    display: flex;
+    flex-direction: column;
+}
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

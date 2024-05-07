@@ -1,0 +1,29 @@
+ <mat-toolbar>Lista de pessoas</mat-toolbar>
+<div class="button-line">
+    <button mat-raised-button color="primary" style="margin-left: 30px;" routerLink="/pessoas/cadastrar">
+       Cadastrar
+    </button>
+    <br/>
+    <table style="margin-top: 20px; margin-left:20px;"  class="table">
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>CPF</th>
+                <th>Data de Nasciomento</th>
+                <th>Renda</th>
+                <th>Ações</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let pessoa of this.pessoas$ | async">
+                <td>{{ pessoa.nome }}</td>
+                <td>{{  this.formatarCPF(pessoa.cpf) }}</td>
+                <td>{{ this.formatarData(pessoa.dataNascimento.toString()) }}</td>
+                <td>{{ this.formatarRenda(pessoa.renda) }}</td>
+                <td>
+                    <a class="update-link" [routerLink]="['/pessoas/cadastrar', pessoa.id]">Editar</a>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
