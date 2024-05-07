@@ -9,7 +9,7 @@ import { PessoaParser } from './parsers/pessoa.parser';
 })
 export class PessoaService {
 
-  private baseURL = 'http://localhost:5098';
+  private baseURL = 'http://localhost:8080';
   private endpoint = 'pessoa';
   constructor(private httpClient: HttpClient) {
 
